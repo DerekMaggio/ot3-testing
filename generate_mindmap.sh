@@ -5,8 +5,8 @@ docker run \
   -v ${PWD}/mermaid:/data \
   ghcr.io/mermaid-js/mermaid-cli/mermaid-cli \
   --input mindmap.mmd \
-  --output mindmap.svg \
+  --output mindmap.png \
   --backgroundColor white
 
 mkdir -p images
-mv mermaid/mindmap.svg images/mindmap.svg
+mv mermaid/mindmap.png images/mindmap.png
